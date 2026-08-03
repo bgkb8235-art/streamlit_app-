@@ -2,8 +2,12 @@ import streamlit as st
 
 st.title("Checking the person eligible for vote or not")
 
-# Taking the input
-age = st.number_input("Enter your age", min_value=0)
+age = st.number_input(
+    "Enter your age",
+    min_value=0,
+    max_value=100,
+    step=1
+)
 
 if st.button("Submit"):
     if age >= 18:
