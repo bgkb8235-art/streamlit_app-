@@ -1,2 +1,4 @@
 import streamlit as st
-print(My First APP)
+
+st.title("My First APP")
+st.write("Welcome to my first Streamlit application!")
