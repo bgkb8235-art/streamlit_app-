@@ -1,9 +1,10 @@
 import streamlit as st
+st.title("Checking the person eligible for vote or not")
+#taking the input 
+age=st.number_input("Enter your age ")
+if st.button("submit")
+  if age >= 18
+    st.success("You are Eligible to Vote")
+else
+    st.sorry("You are not eligible to vote")
 
-st.title("My first streamlit app")
-
-# Take the text input
-name = st.text_input("Enter your name")
-
-if st.button("Submit"):
-    st.write(f"Hello, {name}")
